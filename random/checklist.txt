@@ -1,0 +1,35 @@
+1 day before
+
+- check ctfd start/end time ***
+
+		- run accounts generation script ***
+		- run openvpn generation script  ***
+		- import ursers.csv to database  ***
+		- check if users were added on ctfd ***
+		- export a single backup ***
+		- edit port forward rules for OpenVPN ***
+		- send credential emails ***
+		- add hidden account to 3ez ***
+		- add hidden account to hindawi
+
+- build docker images ** (nizar's not yet)
+- increase max decay to 40 ***
+- change notification.mp3 ***
+- edit machine (enable upload)  ***
+- edit machine ip in description ***
+
+
+
+
+on the day
+
+- check ctfd start/end/freeze time again ***
+- regenerate api tokens for discord bot and backup script ***
+- start the backup cronjob (once per minute) ***
+- start the first blood anouncer bot ***
+- deploy all docker challenges ***
+- read Patebin.Bros instructions 
+- deploy openvpn server ***
+- deploy machine ***
+- remind zu3bi to make beluga public ***
+- add guest account to hindawi ***

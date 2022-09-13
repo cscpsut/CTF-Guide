@@ -1,0 +1,29 @@
+- change nickname on discord
+
+- explain what ctf is
+
+- the pointing system is dynamic which means any challenge's worth is dependent on the number of solves
+
+- which means all the challenges will have the same worth at the start regardless of difficulty 
+
+- you being the first solver of a challenge doesn't mean you are garunteed max points (depending on how many people solve it)
+
+- no extra points are awarded for firstblood
+
+- Challnges that have asterisks in their name are jackpot challenges (first blood special prize)
+
+- Do not DM any of the writers unless permitted otherwise
+
+- you can @ the writers and ask for hints on this discord server in the respective category channel
+
+- Read the rules in the rules channel
+
+- don't waste time trying to attack ctfd as its the latest patch and unless you're a security researcher u wont find a vuln
+
+- none of the web challenges need bruteforce whether parameter fuzzing/directory busting  (please don't)
+
+- don't bombard ctfd as we have applied rate limiters, you'll think you slowed the site but its only slow for YOU
+
+- backups are taken every 1 minute and in case of emergency ctf will be paused and everyone will be imformed
+
+- some challenges have limited tries so be smart and dont brute force online
