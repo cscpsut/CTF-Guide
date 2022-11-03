@@ -21,4 +21,3 @@ This repository aims to offer a step-by-step guide on how to deploy a successful
 - [How to setup FirstBloods announcer (optional)](https://github.com/cscpsut/CTF-Guide#FirstBloods)
 - []
 - [The full picture with detailed diagrams (Amer Jarrar's Architecture :D)](https://github.com/cscpsut/CTF-Guide#Diagram)
-
