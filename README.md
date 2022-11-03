@@ -18,7 +18,7 @@ The club currently adopts the use of [CTFd](https://github.com/CTFd/CTFd) which 
 This repository aims to offer a step-by-step guide on how to deploy a successful CTF. Bear in mind that this guide was written according to the past experiences of previous Infrastructure Adminstration Officers in the club, you're free to follow them as is or add your own spice to the mix as you see fit!
 
 
-- [SSH (with sublime text)](https://github.com/cscpsut/CTF-Guide/edit/main/README.md#overview)
+- [SSH (with sublime text)](https://github.com/cscpsut/CTF-Guide#overview)
 - 
 
 
