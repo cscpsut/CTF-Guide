@@ -24,4 +24,4 @@ This repository aims to offer a step-by-step guide on how to deploy a successful
 - [How to setup FirstBloods CTFd API announcer (optional)](https://github.com/cscpsut/CTF-Guide#FirstBloods)
 - [How to setup FirstBloods discord bot announcer (optional)](https://github.com/cscpsut/CTF-Guide#FirstBloodsDiscord)
 - [Deploying Challenges with Docker](https://github.com/cscpsut/CTF-Guide#Dockers)
-
+- [Deploying OpenVPN/WireGaurd](https://github.com/cscpsut/CTF-Guide#VPN)
