@@ -21,7 +21,9 @@ This repository aims to offer a step-by-step guide on how to deploy a successful
 - [Cloudflare for Domain Management](https://github.com/cscpsut/CTF-Guide#Cloudflare)
 - [The full picture of the infrastructure with diagrams (Amer Jarrar's Architecture :D)](https://github.com/cscpsut/CTF-Guide#Diagram)
 - [How to setup CTFd](https://github.com/cscpsut/CTF-Guide#CTFd)
+- [Remove Israel from the countries list and replace it with "مجرة السلط الأبية"]
 - [How to setup FirstBloods CTFd API announcer (optional)](https://github.com/cscpsut/CTF-Guide#FirstBloods)
 - [How to setup FirstBloods discord bot announcer (optional)](https://github.com/cscpsut/CTF-Guide#FirstBloodsDiscord)
 - [Deploying Challenges with Docker](https://github.com/cscpsut/CTF-Guide#Dockers)
 - [Deploying OpenVPN/WireGaurd](https://github.com/cscpsut/CTF-Guide#VPN)
+- [Password Policies (We have to talk about this)](https://github.com/cscpsut/CTF-Guide#Passwords)
