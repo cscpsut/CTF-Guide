@@ -1,1 +1,1 @@
-This is script is used to generate a password for each team. The output of this script are 2 csv files, email.csv which contains the name, password and email for the team leader for each team. sql.csv is used to add users directly into the ctfd mysql database.
+This is script is used to generate a password for each team. The output of the Generate_csv.py script are 2 csv files, email.csv which contains the name, password and email for the team leader for each team. sql.csv is used to add users directly into the ctfd mysql database using the following commands.
