@@ -2,7 +2,7 @@
 
 **CTF deployment guide for future generations** :space_invader:
 
-<img align="right" src="https://user-images.githubusercontent.com/35840617/171266140-a7f88018-c359-4ad1-955d-f96d54bfbdc1.png" width="200"><br/>
+<img align="right" src="https://user-images.githubusercontent.com/35840617/171266140-a7f88018-c359-4ad1-955d-f96d54bfbdc1.png" width="300"><br/>
 
 
 ## Overview
@@ -17,13 +17,39 @@ The club currently adopts the use of [CTFd](https://github.com/CTFd/CTFd) which 
 
 This repository aims to offer a step-by-step guide on how to deploy a successful CTF. Bear in mind that this guide was written according to the past experiences of previous Infrastructure Adminstration Officers in the club, you're free to follow them as is or add your own spice to the mix as you see fit!
 
-- [SSH to the VPS (with sublime text)](https://github.com/cscpsut/CTF-Guide#SSH)
-- [Cloudflare for Domain Management](https://github.com/cscpsut/CTF-Guide#Cloudflare)
 - [The full picture of the infrastructure with diagrams (Amer Jarrar's Architecture :D)](https://github.com/cscpsut/CTF-Guide#Diagram)
+- [SSH to the VPS with sublime text to edit files remotely (nano/vi are primitive)](https://github.com/cscpsut/CTF-Guide#SSH)
+- [Cloudflare for Domain Management](https://github.com/cscpsut/CTF-Guide#Cloudflare)
 - [How to setup CTFd](https://github.com/cscpsut/CTF-Guide#CTFd)
-- [Remove Israel from the countries list and replace it with "مجرة السلط الأبية"]
+- [Remove Israel from the countries list and replace it with "مجرة السلط الأبية"](https://github.com/cscpsut/CTF-Guide#Countries)
 - [How to setup FirstBloods CTFd API announcer (optional)](https://github.com/cscpsut/CTF-Guide#FirstBloods)
 - [How to setup FirstBloods discord bot announcer (optional)](https://github.com/cscpsut/CTF-Guide#FirstBloodsDiscord)
 - [Deploying Challenges with Docker](https://github.com/cscpsut/CTF-Guide#Dockers)
 - [Deploying OpenVPN/WireGaurd](https://github.com/cscpsut/CTF-Guide#VPN)
 - [Password Policies (We have to talk about this)](https://github.com/cscpsut/CTF-Guide#Passwords)
+
+
+## Diagram
+
+
+
+## SSH
+
+
+## Cloudflare
+
+
+## CTFd
+
+
+## Countries
+
+## FirstBloods
+
+## FirstBloodsDiscord
+
+## Dockers
+
+## VPN
+
+## Passwords
