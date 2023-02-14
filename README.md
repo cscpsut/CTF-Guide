@@ -51,9 +51,9 @@ This repository aims to offer a step-by-step guide on how to deploy a successful
 - To install **RemoteSubl** plugin for Sublime-Text, follow this [guide](https://stackoverflow.com/questions/37458814/how-to-open-remote-files-in-sublime-text-3)
 - To install **Remote-SSH** extension for VSCode, follow this [guide](https://code.visualstudio.com/docs/remote/ssh)
 - profit 💰💰💰
-
-<img src="https://raw.githubusercontent.com/cscpsut/CTF-Guide/main/random/Animation.gif?token=GHSAT0AAAAAABYKYO75H5XWY27GUSTYZXQQY7MD7FA" width="600">
-
+<p align="center">
+<img src="https://raw.githubusercontent.com/cscpsut/CTF-Guide/main/random/Animation.gif?token=GHSAT0AAAAAABYKYO75H5XWY27GUSTYZXQQY7MD7FA" width="800">
+</p>
 ## Cloudflare
 
 
