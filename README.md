@@ -31,7 +31,7 @@ This repository aims to offer a step-by-step guide on how to deploy a successful
 
 ## Diagram
 
-
+<img align="middle" src="https://raw.githubusercontent.com/cscpsut/CTF-Guide/main/random/diagram.png?token=GHSAT0AAAAAABYKYO75JH3ILCNEJXDYQR6EY7MCBGA" width="800"><br/>
 
 ## SSH
 
