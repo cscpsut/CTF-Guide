@@ -11,7 +11,7 @@ The cyber security club PSUT has two virtual private servers (Ubuntu Server LTS)
 1. `CTFd VPS` is dedicated to hosting the CTFd platform on [cscpsut.com](https://cscpsut.com).
 2. `Challenges VPS` is dedicated to hosting **remote** CTF challenges (mostly web, pwn and probably crypto too).
 
-The club currently adopts the use of [CTFd](https://github.com/CTFd/CTFd) which is an open-source CTF platform that's easy to setup and use. The domain [cscpsut.com](https://cscpsut.com) is being managed using [Cloudflare](https://www.cloudflare.com/) due to the useful features cloudflare offers (mostly HTTPS implementation and DDoS protection). As for remote challenges we currently **_still_** depend on Docker Containers which run on the `Challenges VPS` and use a couple of handy bash scripts to automate the deployment and destruction of containers (challenges). 
+The club currently adopts the use of [CTFd](https://github.com/CTFd/CTFd) which is an open-source CTF platform that's easy to setup and use. The domain [cscpsut.com](https://cscpsut.com) is being managed using [Cloudflare](https://www.cloudflare.com/) due to the useful features cloudflare offers (mostly HTTPS implementation and DDoS protection). As for remote challenges we currently **_still_** depend on single Docker Containers which run on the `Challenges VPS` and use a couple of handy bash scripts to automate the deployment and destruction of containers (challenges). 
 
 >Note: I am currently researching the prospect of deploying on-demand challenges using Kubernetes/Docker Swarm but as of the current date/time (03/11/2022) we still rely on single Docker containers for each challenge.
 
