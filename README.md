@@ -17,24 +17,43 @@ The club currently adopts the use of [CTFd](https://github.com/CTFd/CTFd) which 
 
 This repository aims to offer a step-by-step guide on how to deploy a successful CTF. Bear in mind that this guide was written according to the past experiences of previous Infrastructure Adminstration Officers in the club, you're free to follow them as is or add your own spice to the mix as you see fit!
 
-- [The full picture of the infrastructure with diagrams (Amer Jarrar's Architecture :D)](https://github.com/cscpsut/CTF-Guide#Diagram)
-- [SSH to the VPS with sublime text to edit files remotely (nano/vi are primitive)](https://github.com/cscpsut/CTF-Guide#SSH)
-- [Cloudflare for Domain Management](https://github.com/cscpsut/CTF-Guide#Cloudflare)
-- [How to setup CTFd](https://github.com/cscpsut/CTF-Guide#CTFd)
+### Quick Links
+- [The full picture of the infrastructure with diagrams](https://github.com/cscpsut/CTF-Guide#Architecture)
+- [SSH to the VPS with Sublime/VSCode to edit server files (nano/vim are primitive)](https://github.com/cscpsut/CTF-Guide#SSH)
+- [Cloudflare DNS/DDoS protection](https://github.com/cscpsut/CTF-Guide#Cloudflare)
+- [Setting up CTFd](https://github.com/cscpsut/CTF-Guide#CTFd)
 - [Remove Israel from the countries list and replace it with "مجرة السلط الأبية"](https://github.com/cscpsut/CTF-Guide#Countries)
-- [How to setup FirstBloods CTFd API announcer (optional)](https://github.com/cscpsut/CTF-Guide#FirstBloods)
-- [How to setup FirstBloods discord bot announcer (optional)](https://github.com/cscpsut/CTF-Guide#FirstBloodsDiscord)
+- [Setup FirstBloods notifications using CTFd API (optional)](https://github.com/cscpsut/CTF-Guide#FirstBloods)
+- [Setup FirstBloods discord bot announcer (optional)](https://github.com/cscpsut/CTF-Guide#FirstBloodsDiscord)
 - [Deploying Challenges with Docker](https://github.com/cscpsut/CTF-Guide#Dockers)
-- [Deploying OpenVPN/WireGaurd](https://github.com/cscpsut/CTF-Guide#VPN)
-- [Password Policies (We have to talk about this)](https://github.com/cscpsut/CTF-Guide#Passwords)
+- [Deploying OpenVPN/WireGaurd for machines](https://github.com/cscpsut/CTF-Guide#VPN)
+- [Password Policies and Management (We have to talk about this)](https://github.com/cscpsut/CTF-Guide#Passwords)
 
 
-## Diagram
+## Architecture
 
-<img align="middle" src="https://raw.githubusercontent.com/cscpsut/CTF-Guide/main/random/diagram.png?token=GHSAT0AAAAAABYKYO75JH3ILCNEJXDYQR6EY7MCBGA" width="800"><br/>
+- `CTFd VPS` sits behind cloudflare's proxy servers that handles HTTPS and offers DDoS/DoS protection
+- `CTFd VPS` has 4 docker containers that function to serve [CTFd](https://github.com/CTFd/CTFd) and are managed using `docker-compose` (more details in [CTFd Setup](https://github.com/CTFd/CTFd))
+-  `Challenges VPS` is directly connectable and has the challenges' containers listening on thier respective ports
+<p align="center">
+<img src="https://raw.githubusercontent.com/cscpsut/CTF-Guide/main/random/diagram.png?token=GHSAT0AAAAAABYKYO75YYYYFALZDV5ZYVLEY7MCLDA" width="800"><br/>
+</p>
+
 
 ## SSH
+### - Setup
+- Install windows terminal from [Microsoft Store](https://apps.microsoft.com/store/detail/windows-terminal/9N0DX20HK701?hl=ar-jo&gl=jo&rtc=1) or [Github](https://github.com/microsoft/terminal) 
+- Install SSH client on windows terminal `Settings --> Apps & Features --> Optional Features --> Add a feature --> OpenSSH Client` (PuTTY is just so bad)
+- open terminal and simply type `ssh root@<vps-ip>` to have a shell!
 
+### - Sublime/VSCode over SSH
+&nbsp;&nbsp;&nbsp;You'll be editing files all the time, you don't want to stick with nano or vim.... _**trust me**_
+- To install **RemoteSubl** plugin for Sublime-Text, follow this [guide](https://stackoverflow.com/questions/37458814/how-to-open-remote-files-in-sublime-text-3)
+- To install **Remote-SSH** extension for VSCode, follow this [guide](https://code.visualstudio.com/docs/remote/ssh)
+- profit 💰💰💰
+
+<img src="https://raw.githubusercontent.com/cscpsut/CTF-Guide/main/random/Animation.gif?token=GHSAT0AAAAAABYKYO74WPQXB4NGUHUXHXHYY7MDWFA" width="600">
+<br>
 
 ## Cloudflare
 
