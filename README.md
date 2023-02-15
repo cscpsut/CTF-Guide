@@ -36,7 +36,7 @@ This repository aims to offer a step-by-step guide on how to deploy a successful
 - `CTFd VPS` has 4 docker containers that function to serve [CTFd](https://github.com/CTFd/CTFd) and are managed using `docker-compose` (more details in [CTFd Setup](https://github.com/CTFd/CTFd))
 -  `Challenges VPS` is directly connectable and has the challenges' containers listening on their respective ports
 <p align="center">
-<img src="https://raw.githubusercontent.com/cscpsut/CTF-Guide/main/random/diagram.png?token=GHSAT0AAAAAABYKYO75NOY26HNYLD5KPO4KY7MD6AA" width="800">
+<img src="random/diagram.png?raw=true" width="800">
 </p>
 
 
@@ -52,7 +52,7 @@ This repository aims to offer a step-by-step guide on how to deploy a successful
 - To install **Remote-SSH** extension for VSCode, follow this [guide](https://code.visualstudio.com/docs/remote/ssh)
 - profit 💰💰💰
 <p align="center">
-<img src="https://raw.githubusercontent.com/cscpsut/CTF-Guide/main/random/Animation.gif?token=GHSAT0AAAAAABYKYO75H5XWY27GUSTYZXQQY7MD7FA" width="800">
+<img src="random/Animation.gif?raw=true" width="800">
 </p>
 
 ## Cloudflare
