@@ -57,6 +57,10 @@ This repository aims to offer a step-by-step guide on how to deploy a successful
 
 ## Cloudflare
 
+This is the cloudflare DNS management interface, you can leave it as is
+<p align="center">
+<img src="random/cloudflare.png?raw=true" width="800">
+</p>
 
 ## CTFd
 
