@@ -64,7 +64,7 @@ This is the cloudflare DNS management interface, you can leave it as is
 
 ## CTFd
 
-CTFd is an open-source Capture The Flag framework focusing on ease of use and customizability. It comes with everything you need to run a CTF and it's easy to customize with plugins and themes. Checkout their [Github Repository](https://github.com/CTFd/CTFd), for detailed guidance checkout their [docs](https://docs.ctfd.io)
+CTFd is an open-source Capture The Flag framework focusing on ease of use and customizability. It comes with everything you need to run a CTF and it's easy to customize with plugins and themes. Checkout their [Github Repository](https://github.com/CTFd/CTFd). For detailed guidance checkout their [docs](https://docs.ctfd.io)
 ### TDLR
 1- Install docker and docker-compose 
 ```console
@@ -95,16 +95,17 @@ with
 proxy_set_header X-Real-IP $http_cf_connecting_ip;
 proxy_set_header X-Forwarded-For $http_cf_connecting_ip;
 ```
-This tells nginx to forward the real client's IP instead of CloudFlare's Servers (CTFd shows the team's IP addresses)
+This tells nginx to forward the real client's IP instead of CloudFlare's Servers (CTFd shows the team's real IP addresses)
 
 <br/>
 
-5- Run with docker-compose, visit `http://<vps-ip>:8000` or `https://cscpsut.com` to check if its running
+5- Run with docker-compose, then visit `http://<vps-ip>:8000` or `https://cscpsut.com` to check if its running
 ```console
 root@server:~/CTFd# docker-compose up -d
 ```
 
 ## Countries
+
 
 ## FirstBloods
 
