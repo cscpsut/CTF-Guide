@@ -50,7 +50,7 @@ This repository aims to offer a step-by-step guide on how to deploy a successful
 &nbsp;&nbsp;&nbsp;You'll be editing files all the time, you don't want to stick with nano or vim.... _**trust me**_
 - To install **RemoteSubl** plugin for Sublime-Text, follow this [guide](https://stackoverflow.com/questions/37458814/how-to-open-remote-files-in-sublime-text-3)
 - To install **Remote-SSH** extension for VSCode, follow this [guide](https://code.visualstudio.com/docs/remote/ssh)
-- profit 💰💰💰
+- Profit 💰💰💰
 <p align="center">
 <img src="random/Animation.gif?raw=true" width="800">
 </p>
@@ -105,7 +105,33 @@ root@server:~/CTFd# docker-compose up -d
 ```
 
 ## Countries
+CTFd has a property called _**Country**_ for every user. To remove Israel from the list:
 
+1- shutdown CTFd temporarily
+```console
+root@server:~/CTFd# docker-compose down
+```
+<br/>
+
+2- Edit `CTFd/utils/countries/__init__.py` with
+
+<br/>
+
+3- Replace `("IL", "Israel")` with `("GSA", "Galaxy سلط")`
+
+<br/>
+
+4- Power up CTFd again using `--build` option to rebuild and add the new changes
+```console
+root@server:~/CTFd# docker-compose up --build -d
+```
+<br/>
+5- Profit 💰💰💰 
+<br/><br/>
+<p align="center">
+<img src="random/image.png?raw=true" width="800">
+</p>
+<br/>
 
 ## FirstBloods
 
