@@ -18,15 +18,15 @@ The club currently adopts the use of [CTFd](https://github.com/CTFd/CTFd) which 
 This repository aims to offer a step-by-step guide on how to deploy a successful CTF. Bear in mind that this guide was written according to the past experiences of previous Infrastructure Adminstration Officers in the club, you're free to follow them as is or add your own spice to the mix as you see fit!
 
 ### Quick Links
-- [The full picture of the infrastructure with diagrams](https://github.com/cscpsut/CTF-Guide#Architecture)
-- [SSH to the VPS with Sublime/VSCode to edit server files (nano/vim are primitive)](https://github.com/cscpsut/CTF-Guide#SSH)
+- [Infrastructure and diagrams](https://github.com/cscpsut/CTF-Guide#Architecture)
+- [SSH + Sublime/VSCode plugins](https://github.com/cscpsut/CTF-Guide#SSH)
 - [Cloudflare DNS/DDoS protection](https://github.com/cscpsut/CTF-Guide#Cloudflare)
 - [Setting up CTFd](https://github.com/cscpsut/CTF-Guide#CTFd)
-- [Remove Israel from the countries list and replace it with "مجرة السلط الأبية"](https://github.com/cscpsut/CTF-Guide#Countries)
-- [Setup FirstBloods notifications using CTFd API (optional)](https://github.com/cscpsut/CTF-Guide#FirstBloods)
-- [Setup FirstBloods discord bot announcer (optional)](https://github.com/cscpsut/CTF-Guide#FirstBloodsDiscord)
+- [Replace Israel from the countries list with "مجرة السلط الأبية"](https://github.com/cscpsut/CTF-Guide#Countries)
+- [Setting up FirstBloods notifications using CTFd API (optional)](https://github.com/cscpsut/CTF-Guide#FirstBloods)
+- [Setting up FirstBloods discord bot announcer (optional)](https://github.com/cscpsut/CTF-Guide#FirstBloodsDiscord)
 - [Deploying Challenges with Docker](https://github.com/cscpsut/CTF-Guide#Dockers)
-- [Deploying OpenVPN/WireGaurd for machines](https://github.com/cscpsut/CTF-Guide#VPN)
+- [Setting up OpenVPN/WireGaurd for machines](https://github.com/cscpsut/CTF-Guide#VPN)
 - [Password Policies and Management (We have to talk about this)](https://github.com/cscpsut/CTF-Guide#Passwords)
 
 
