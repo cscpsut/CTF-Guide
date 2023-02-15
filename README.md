@@ -23,8 +23,8 @@ This repository aims to offer a step-by-step guide on how to deploy a successful
 - [Cloudflare DNS/DDoS protection](https://github.com/cscpsut/CTF-Guide#Cloudflare)
 - [Setting up CTFd](https://github.com/cscpsut/CTF-Guide#CTFd)
 - [Replace Israel from the countries list with "مجرة السلط الأبية"](https://github.com/cscpsut/CTF-Guide#Countries)
-- [Setting up FirstBloods notifications using CTFd API (optional)](https://github.com/cscpsut/CTF-Guide#FirstBloods)
 - [Setting up FirstBloods discord bot announcer (optional)](https://github.com/cscpsut/CTF-Guide#FirstBloodsDiscord)
+- [Setting up FirstBloods notifications using CTFd API (optional)](https://github.com/cscpsut/CTF-Guide#FirstBloods)
 - [Deploying Challenges with Docker](https://github.com/cscpsut/CTF-Guide#Dockers)
 - [Setting up OpenVPN/WireGaurd for machines](https://github.com/cscpsut/CTF-Guide#VPN)
 - [Password Policies and Management (We have to talk about this)](https://github.com/cscpsut/CTF-Guide#Passwords)
@@ -113,7 +113,11 @@ root@server:~/CTFd# docker-compose down
 ```
 <br/>
 
-2- Edit `CTFd/utils/countries/__init__.py` with
+2- Edit `CTFd/utils/countries/__init__.py` file
+
+```console
+root@server:~/CTFd# rsub CTFd/utils/countries/__init__.py
+```
 
 <br/>
 
@@ -133,9 +137,9 @@ root@server:~/CTFd# docker-compose up --build -d
 </p>
 <br/>
 
-## FirstBloods
-
 ## FirstBloodsDiscord
+
+## FirstBloods
 
 ## Dockers
 
