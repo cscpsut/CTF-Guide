@@ -28,7 +28,7 @@ This repository aims to offer a step-by-step guide on how to deploy a successful
 - [Deploying Challenges with Docker](https://github.com/cscpsut/CTF-Guide#Dockers)
 - [Setting up OpenVPN/WireGaurd for machines](https://github.com/cscpsut/CTF-Guide#VPN)
 - [Password Policies and Management (We have to talk about this)](https://github.com/cscpsut/CTF-Guide#Passwords)
-
+- [Password Policies and Management (We have to talk about this)](https://github.com/cscpsut/CTF-Guide#Cloud)
 
 ## Architecture
 
@@ -139,10 +139,64 @@ root@server:~/CTFd# docker-compose up --build -d
 
 ## FirstBloodsDiscord
 
+It is nice to have an announcer for first bloods on discord. Check out this awesome project which uses docker-compose https://github.com/jordanbertasso/CTFd-First-Blood-Discord. Can be added to the same compose file as CTFd so both services can be run together. Before you can use it you have to do the following:
+
+- Create a CTFd API token:
+
+Make sure to store it safely as this token have the same permissions as your account .i.e Admin , Refer to [Passwords](https://github.com/cscpsut/CTF-Guide#Passwords).
+
+<br/>
+<p align="center">
+<img src="random/Untitled.png?raw=true" width="800">
+</p>
+<br/>
+
+- Create Discord Webhook:
+
+Go to  `Server Settings --> Intergrations --> Webhooks`. Click on `New Webhook`, specify the channel that will have the first blood announcements on and copy the URL.
+
+<br/>
+<p align="center">
+<img src="random/discord.png?raw=true" width="800">
+</p>
+<br/>
+
+
+The announcements should look like this...
+<br/>
+<p align="center">
+<img src="random/channel.png?raw=true" width="800">
+</p>
+<br/>
+
+To spice it up you can edit the code and add an embed to have something like this...
+<p align="center">
+<img src="random/embed.png?raw=true" width="800">
+</p>
+
+How? Check out discord.py [docs](https://discordpy.readthedocs.io/en/stable/api.html). This is [file](https://github.com/jordanbertasso/CTFd-First-Blood-Discord/blob/main/ctfd-first-blood-discord/solve_handler.py) responsible for sending the announcments, customize it as you see fit 
+
 ## FirstBloods
+To be done later
 
 ## Dockers
 
 ## VPN
+I recommend using https://github.com/angristan/openvpn-install. Run the installation script for the first time then use [batch.py](https://github.com/cscpsut/CTF-Guide/blob/main/random/batch.py) to create config files for all competitors given a CSV file.
 
 ## Passwords
+
+This section not only includes login password, but also sensitive secrets like CTFd API tokens. Anyone who has your token has admin privileges on your CTFd which allows extracting flags, add challenges, remove challenges ....etc. You get my point. Also Discord Webhook Links, you don't want people to hijack your first blood anouncment channel. 
+
+Things I have to say. Please be really serious about this:
+- Do not use weak passwords. ALWAYS generate random strong passwords
+- Avoid copying or sending passwords over chat (Discord, whatsapp...etc)
+
+I recommend using a shared/synced Password Manager for all those who are involved in CTF deployment/writing. My favourite is [buttercup](https://github.com/buttercup/buttercup-desktop). It is an open-source password manager and can be self-hosted (Check out https://github.com/cscpsut/CTF-Guide#Cloud), it can also be installed on both IOS/Android and boimetrics unlocking can be enabled. 
+
+
+ ## Cloud
+
+CTFd cannot handle large file attachments (for example Memory Captures and Disk Images), so you have to upload them to Google Drive. But sometimes the upload/download speed can be disappointing and sometimes Google Drive blocks you from uploading after spamming many times. Why not just host your own cloud/Drive! Check out https://github.com/nextcloud/server! You can also use it to safely store the shared passwords Vault (Make sure to enabl WebDAV which Nextcloud supports) 
+
+
