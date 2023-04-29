@@ -9,7 +9,7 @@ sql_csv = open("sql.csv", "w")
 
 
 characterset = (
-    string.ascii_letters + string.digits + string.punctuation.replace(",", "")
+    string.ascii_letters + string.digits + string.punctuation.replace(",", "").replace('"',"")
 )
 
 line_count = 0
