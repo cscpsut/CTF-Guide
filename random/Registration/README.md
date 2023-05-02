@@ -2,5 +2,5 @@ This is script is used to generate a password for each team. The output of the G
 
 
 `SET SESSION SQL_MODE='ALLOW_INVALID_DATES'`<br>
-`LOAD DATA LOCAL INFILE 'sql.csv' INTO TABLE your_awesome_table FIELDS TERMINATED BY ','  ENCLOSED BY '" 'LINES TERMINATED BY '\n'`
+`LOAD DATA LOCAL INFILE 'sql.csv' INTO TABLE users FIELDS TERMINATED BY ','  ENCLOSED BY '"' LINES TERMINATED BY '\n'`
 
